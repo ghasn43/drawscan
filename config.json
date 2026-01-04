@@ -1,0 +1,86 @@
+{
+    "application": {
+        "name": "DXF BOQ Extractor",
+        "version": "2.0.0",
+        "default_units": "m"
+    },
+
+    "rates": {
+        "concrete_works": {
+            "walls": 8500,
+            "slabs": 8200,
+            "beams": 8500,
+            "columns": 8600,
+            "foundations": 8300
+        },
+        "masonry": {
+            "brick_walls": 4500,
+            "block_walls": 4800,
+            "stone_masonry": 6500
+        },
+        "finishes": {
+            "plastering": 350,
+            "painting": 180,
+            "flooring": 1200,
+            "tiling": 950,
+            "false_ceiling": 850
+        },
+        "openings": {
+            "doors": 12000,
+            "windows": 8000,
+            "ventilators": 3500,
+            "skylights": 15000
+        },
+        "services": {
+            "plumbing": 850,
+            "electrical": 750,
+            "fire_fighting": 1200,
+            "hvac": 1500
+        }
+    },
+
+    "standards": {
+        "wall_thickness": 0.23,
+        "slab_thickness": 0.15,
+        "beam_sizes": {
+            "width": 0.23,
+            "depth": 0.45
+        },
+        "column_sizes": {
+            "residential": 0.23,
+            "commercial": 0.30,
+            "industrial": 0.45
+        },
+        "door_sizes": {
+            "main": [ 0.9, 2.1 ],
+            "internal": [ 0.8, 2.0 ],
+            "bathroom": [ 0.7, 2.0 ]
+        },
+        "window_sizes": {
+            "standard": [ 1.2, 1.2 ],
+            "large": [ 1.8, 1.5 ],
+            "bay": [ 2.4, 1.8 ]
+        }
+    },
+
+    "layer_mappings": {
+        "walls": [ "WALL", "WALLS", "STRUCT_WALL", "A-WALL", "EXTERIOR_WALL", "INTERIOR_WALL" ],
+        "slabs": [ "SLAB", "SLABS", "FLOOR", "A-SLAB", "ROOF", "TERRACE" ],
+        "beams": [ "BEAM", "BEAMS", "A-BEAM", "GIRDER", "LINTEL" ],
+        "columns": [ "COLUMN", "COLUMNS", "A-COLUMN", "PILLAR", "POST" ],
+        "doors": [ "DOOR", "DOORS", "A-DOOR", "DR", "ENTRANCE" ],
+        "windows": [ "WINDOW", "WINDOWS", "A-WIND", "WD", "GLAZING" ],
+        "foundations": [ "FOUNDATION", "FOOTING", "A-FOUND", "BASE" ],
+        "furniture": [ "FURNITURE", "FURN", "A-FURN", "FIXTURE" ],
+        "plumbing": [ "PLUMBING", "PIPE", "A-PLUMB", "SANITARY" ],
+        "electrical": [ "ELECTRICAL", "ELEC", "A-ELEC", "LIGHT", "POWER" ]
+    },
+
+    "output": {
+        "excel_template": "boq_template.xlsx",
+        "default_folder": "output",
+        "create_subfolders": true,
+        "include_timestamp": true,
+        "formats": [ "excel", "json", "pdf", "csv" ]
+    }
+}

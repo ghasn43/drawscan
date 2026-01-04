@@ -1,0 +1,52 @@
+PROJECT: DXF Engineering Project
+Date: 2026-01-04 13:05:58
+======================================================================
+
+DRAWING INFORMATION:
+----------------------------------------
+Units: m
+Total Entities: 2630
+Total Layers: 32
+Drawing Width: 0.00 units
+Drawing Height: 0.00 units
+
+QUANTITY SUMMARY:
+----------------------------------------
+
+Walls:
+  Length M: 476.903 m
+  Area M2: 109.688 m2
+  Count: 264.000 
+
+Linear Elements:
+  Length M: 2193.229 m
+  Count: 963.000 
+
+Area Elements:
+  Area M2: 344.851 m2
+  Count: 173.000 
+
+======================================================================
+BILL OF QUANTITIES
+======================================================================
+
+1. Concrete in walls
+   Quantity: 25.228 m³
+   Rate: Rs.8,500.00
+   Amount: Rs.214,439.59
+
+2. Plastering on walls (both sides)
+   Quantity: 219.376 m²
+   Rate: Rs.350.00
+   Amount: Rs.76,781.44
+
+3. Painting on walls
+   Quantity: 219.376 m²
+   Rate: Rs.180.00
+   Amount: Rs.39,487.60
+
+
+GRAND TOTAL: Rs.330,708.63
+
+======================================================================
+END OF REPORT
